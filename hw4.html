@@ -1,0 +1,335 @@
+<!--Homework 4: Web development-->
+<!-- As of today this project is working fully with all the use cases and javacript. If the txt file generates some errors. please lmk. -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Homework 4: Bootstrap and Forms</title>
+    <!-- This is font awesome -->
+    <script src="https://kit.fontawesome.com/4496584ffb.js" crossorigin="anonymous"></script>
+
+    <!-- jquery library  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"> </script>
+
+    <!-- This is the bootstrap files/libs -->
+    <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <script type="text/javascript" src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js'></script>
+    <!-- Toastr library CSS -->
+    <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" />
+    <!-- Toastr javascript lib -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js">  </script>
+    <!-- Style tag for basic css editing for better formatting. -->
+    <link rel="stylesheet" href="hw4CSS.css">
+  </head>
+
+  <body>
+    <!-- Input Types section -->
+    <h1>Input Types:</h1>
+    <div>
+      <form action="index.html" method="post">
+
+
+      <label for="text"> <strong>Text: </strong></label> <br>
+       <input type="text" name="text" value="" placeholder="Some text..." class ="sameLen">
+
+       </div>
+        <br>
+
+        <div>
+        <label for="number"> <strong>Number:</strong> </label> <br>
+        <input type="number" name="number" value="" placeholder="Enter some number..." class="sameLen">
+        <br>
+        </div>
+        <br>
+        <div>
+           <label for="datum"> <strong> Date:</strong> </label> <br>
+          <input type="date" name="datum" value="" placeholder="Enter a date.." class="sameLen">
+        </div>
+        <br>
+        <div>
+        <label for="color"> <strong>Color:</strong></label>  <br>
+        <input type="color" name="color" value="" placeholder="Pick a color..." class="sameLen">
+
+        </div>
+
+        <br>
+        <div>
+        <label for="time"> <strong>Time:</strong> </label> <br>
+        <input type="time" name="time" value="" placeholder="Enter a time..." class="sameLen">
+
+        </div>
+        <br>
+        <div>
+         <label for="week"> <strong> Week:</strong> </label>  <br>
+        <input type="week" name="week" value="" placeholder="Enter a week..." class="sameLen">
+        </div>
+
+        <br>
+        <div>
+        <label for="month"> <strong>Month:</strong></label> <br>
+        <input type="month" name="" value="" placeholder="Enter a monthh..." class="sameLen">
+        </div>
+
+        <br>
+        <div>
+       <label for="datetime"> <strong>Date and Time: </strong> </label>  <br>
+        <input type="datetime-local" name="datetime" value="" placeholder="Enter date and time..." class="sameLen">
+        </div>
+        <br>
+        <div>
+        <label for="file"></label> <strong>File:</strong><br>
+        <input type="file" name="" value="" placeholder="Choose a file" class="sameLen">
+
+        </div>
+        <br>
+        <div>
+         <label for="password"> <strong> Password:</strong> </label><br>
+        <input type="password" name="password" value="" placeholder="enter your password..." class="sameLen">
+        </div>
+
+        <br>
+        <div>
+         <label for="range"> <strong>Range:</strong> </label>  <br>
+        <input type="range" name="" value="" placeholder="Enter a range..." style = "width: 200px">
+
+        </div>
+
+
+    </div>
+
+    <!--Checkboxes-->
+    <h1>Checkboxes:</h1>
+    <div>
+
+    <input type="checkbox" name="checkbox1" value="" placeholder="checkbox1">
+    <label for="checkbox1"> checkbox1</label>
+
+    <input type="checkbox" name="checkbox2" value="" placeholder="checkbox2">
+    <label for="checkbox2"> checkbox2 </label>
+
+    <input type="checkbox" name="checkbox3" value="" placeholder="checkbox3">
+    <label for="checkbox3"> checkbox3 </label>
+
+    </div>
+
+    <!--Radios -->
+    <h1>Radios:</h1>
+
+    <div>
+    <input type="radio" name="radioBtn" value="Radio1" >
+    <label for="radio">Radio1</label>
+
+    <input type="radio" name="radioBtn" value="Radio2" >
+    <label for="radio">Radio2</label>
+
+    <input type="radio" name="radioBtn" value="Radio3" >
+    <label for="radio">Radio3</label>
+
+    </div>
+
+    <!--Dropdown-->
+    <h1>Dropdowns:</h1>
+    <div>
+      <label for="Flavors"> Choose a flavor:</label>
+      <select name="Flavors">
+      <option value="select"> select</option>
+      <option value="chocolate"> chocolate</option>
+      <option value="mint"> mint</option>
+      <option value="vanilla">vanilla</option>
+      <option value="other">other</option>
+
+      </select>
+    </div>
+    <!--Auto-Complete -->
+    <h1>Auto Complete:</h1>
+    <div>
+      <label for="someTxt"></label>
+
+      <input list="sentences" name="someTxt" placeholder="Some auto complete sentences">
+
+      <datalist id="sentences">
+        <option value="I like this page.">
+        <option value="I don't like this page.">
+        <option value="I love this page.">
+        <option value="It's okay.">
+        <option value="Needs improvement.">
+    </div>
+    <!--Text Areas-->
+    <h1>Text Areas: </h1>
+
+    <div>
+   <textarea name="txtarea" rows="3" cols="40" placeholder="Enter text here.."></textarea>
+    </div>
+    <!-- Buttons -->
+    <h1>Buttons: </h1>
+    <div>
+      <button name="btn"><i class="fa fa-home">This is a home button </i></button>
+    </div>
+
+    <!-- BOOTSTRAP BOOKING FORM -->
+
+    <h1>Bootstrap booking form: </h1>
+    <div class = "well">  Fill out the form and click the submit button when complete.  </div>
+    <form class="form-group"  action="index.html" method="post" id = "bookForm">
+    <div class="row">
+    <div class="col-xs-6">
+
+      <!-- The left half of the form with panels. -->
+      <!-- Panel 1 -->
+      <div class="panel panel-default">
+      <div class="panel-heading" style = "background-color:#0784EB">User:</div>
+      <div class="panel-body">
+        <div class="row">
+        <div class="col-sm-4"> <!-- Labels  -->
+          <div class="form-inline">
+          <label for="username" class = "form-group">User: </label>
+
+        </div>
+        <br>
+        <br>
+        <div class="form-inline">
+        <label for="firstName" class = "form-group">First Name: </label>
+        </div>
+        <br>
+        <br>
+        <div class="form-inline">
+        <label for="lastName" class = "form-group">Last Name: </label>
+
+        </div>
+        </div>
+        <div class="col-sm-8"><!-- Input tags -->
+        <div class="form-inline" id = "usernameDiv">
+        <input type="text" class="form-control" id="username" placeholder="Enter your username.." size ="54.99px">
+        </div>
+        <br>
+        <div class="form-inline" id = firstNameDiv>
+        <input type="text" class="form-control" id="firstName" placeholder="Enter your first name.." size ="54.99px">
+        </div>
+        <br>
+        <div class="form-inline" id = lastNameDiv >
+        <input type="text" class="form-control" id="lastName" placeholder="Enter your last name.." size ="54.99px">
+        </div>
+
+        </div>
+      </div>
+      </div>
+      </div>
+
+      <!-- Panel 2 -->
+      <div class="panel panel-default">
+      <div class="panel-heading" style = "background-color:#0784EB">Contact:</div>
+      <div class="panel-body">
+        <!-- Panel Content -->
+        <div class="form-group " id = "userNumDiv">
+        <div class="input-group">
+        <div class="input-group-addon">
+  	    <i class="fa-solid fa-phone"> </i>
+        </div>
+        <input class="form-control" id="userNum" name="nums" type="number" placeholder="Type your number.."/>
+        </div>
+        </div>
+
+        <div class="form-group" id = userFaxDiv>
+        <div class="input-group">
+        <div class="input-group-addon">
+  	    <i class="fa-solid fa-fax"> </i>
+        </div>
+        <input class="form-control" id="userFax" name="fax" type="number" placeholder="Enter your fax.."/>
+        </div>
+        </div>
+
+
+      <div class="form-group" id = userEmailDiv>
+      <div class="input-group">
+      <div class="input-group-addon">
+	    <i class="fa fa-envelope-o"></i>
+      </div>
+      <input class="form-control" id="userEmail" name="email" type="email" placeholder="Type your email.. "/>
+      </div>
+      </div>
+
+        <!-- End of Panel Content -->
+      </div>
+
+      </div>
+
+      <!-- Panel 3 -->
+      <div class="panel panel-default">
+      <div class="panel-heading" style = "background-color:#0784EB">Schedule:</div>
+      <div class="panel-body">
+        <!-- Panel Content -->
+        <div class="form-group">
+        <label for="adults" class = "form-group">Adults: </label>
+        <input type="number" class="form-control" id="adults" size="100px" placeholder="Enter no of adults..." onchange="changeCost()">
+        </div>
+
+        <div class="form-group">
+        <label for="date1" >Checkin:</label>
+        <input type="date" class="form-control" id ="date1" onchange="changeCost()" placeholder="Choose a date..">
+
+        </div>
+
+
+        <div class="form-group">
+        <label for="date2" id="date2lbl"> Checkout:</label>
+        <input type="date" class="form-control" id ="date2" onchange="changeCost()" placeholder="Choose a date..">
+        </div>
+
+
+        <div class="form-group" id = "dateDiv">
+        <label for="days">Days:</label>
+        <input type="number" class="form-control" id ="days" readonly placeholder="total days are.." size = "10px">
+        <div class="form-group" id = "costDiv">
+        <label for="cost" id = "lblCost">Cost:</label>
+        <input type="number" class="form-control" id ="cost" readonly placeholder=" the cost is..">
+        </div>
+        </div>
+
+        <!-- End of Panel Content -->
+      </div>
+      </div>
+    </div>
+    <div class="col-xs-6">
+      <!-- Right half of the form -->
+      <div class="panel panel-default">
+      <div class="panel-heading" style = "background-color:#0784EB">Other:</div>
+      <div class="panel-body">
+        <!-- Panel Content -->
+        <div class="form-group">
+        <label for="txtArea">Message:</label> <br>
+        <textarea name="name" rows="8" cols="80" id = "txtArea" placeholder="Enter comments here..."></textarea>
+      </div>
+        <!-- Range -->
+      <div class="form-inline">
+      <label for="range"> <strong>Range:</strong> </label> <br>
+      <input type="range" name="" value="" placeholder="Enter a range..." id = "rangeArea">
+      </div>
+
+
+      <div class="form-inline">
+      <br> <label for="radios"> Priority:</label> <br>
+      <input type="radio" class="form-control" name="radioBtn" value="Radio1" >
+      <label for="radio">Low </label>
+
+      <input type="radio" class="form-control" name="radioBtn" value="Radio2" >
+      <label for="radio">Mid</label>
+
+      <input type="radio" class="form-control" name="radioBtn" value="Radio3" >
+      <label for="radio">High</label>
+
+        </div>
+        <!-- End of Panel Content -->
+      </div>
+      </div>
+
+      <button type="reset"  class="btn btn-info" id ="resetBtn" onclick="popup()"><i class="fa-solid fa-eraser" ></i>Reset</button>
+  </form>
+      <button  class="btn btn-success" onclick="validate()" id = "submitBtn"> <i class="fa-solid fa-paper-plane"></i> Submit</button >
+
+    </div>
+    </div>
+
+          <!-- This is the local javascript file -->
+      <script type="text/javascript" src="hw4Script.js"> </script>
+  </body>
+</html>

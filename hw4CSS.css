@@ -1,0 +1,40 @@
+
+h1{color: red;}
+.sameLen{
+  width: 200px;
+  length: 100px:
+}
+.form-inline {
+  display: inline;
+}
+#resetBtn{
+  position: relative;
+
+  left: 390px;
+  padding-left: 40px;
+  padding-right: 40px;
+
+}
+#submitBtn{
+  position: relative;
+
+  left: 400px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+#days{
+  width: 40%;
+
+}
+#cost{
+  width: 40%;
+  position: relative;
+  left: 400px;
+  bottom: 59px;
+}
+#lblCost{
+  position: relative;
+  left: 400px;
+  bottom: 58px;
+
+}
